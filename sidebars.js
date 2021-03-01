@@ -2,8 +2,15 @@ module.exports = {
   someSidebar: {
     Overview: ["orchestrator", "sift"],
     "Getting started": ["installing", "running"],
-    Guides: ["invites", "users", "test-plans", "tests"],
-    "Advanced guides": ["settings", "nodes"],
+    Dashboard: [
+      "users",
+      "test-plans",
+      "tests",
+      "flaky-tests",
+      "settings",
+      "nodes",
+    ],
+    Guides: ["envvars"],
     Integrations: ["circle-ci", "jenkins"],
   },
 };

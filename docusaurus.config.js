@@ -5,7 +5,7 @@ module.exports = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "Engenious", // Usually your GitHub org/user name.
+  organizationName: "engenious", // Usually your GitHub org/user name.
   projectName: "testorchestrator", // Usually your repo name.
   themeConfig: {
     navbar: {
@@ -13,14 +13,10 @@ module.exports = {
       logo: {
         alt: "Test Orchestrator",
         src: "img/logo.svg",
-        href: "https://staging.orchestrator.engenious.io/",
+        href: "../",
         target: "_self",
       },
       items: [
-        // {
-        //   type: "localeDropdown",
-        //   position: "left",
-        // }, //TODO
         {
           href: "https://github.com/engeniousio/sift",
           label: "Sift IOS",
@@ -83,16 +79,6 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} orchestrator.engenious.io.`,
     },
   },
-  // i18n: {
-  //   defaultLocale: 'en',
-  //   locales: ['en', 'fr'],
-  //   localeConfigs: {
-  //     en: {
-  //       label: 'English',
-  //       direction: 'ltr',
-  //     }
-  //   },
-  // },
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -100,7 +86,8 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/engeniousio/orchestrator-docs/",
+          editUrl:
+            "https://github.com/engeniousio/orchestrator-docs/edit/master/",
           routeBasePath: "/",
         },
         theme: {
