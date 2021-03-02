@@ -25,7 +25,7 @@ swift build -c release
 
 ## Step 2 (Run Sift with Orchestrator):
 
-1. Copy a token from Test Orchestrator see the page "Global settings" (read more about [Global Settings](/docs/settings/)).
+1. Copy the [organization token](/settings/#token) from the dashboard, see the page "Global settings" (read more about [Global Settings](/settings/)).
 
 2. In the terminal paste token and test plan name.
 

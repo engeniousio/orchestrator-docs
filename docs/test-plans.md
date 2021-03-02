@@ -1,14 +1,80 @@
 ---
 id: test-plans
-title: Test plans
+title: Test Plans
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu consequat dui. Nullam molestie consectetur risus id imperdiet. Proin sodales ornare turpis, non mollis massa ultricies id. Nam at nibh scelerisque, feugiat ante non, dapibus tortor. Vivamus volutpat diam quis tellus elementum bibendum. Praesent semper gravida velit quis aliquam. Etiam in cursus neque. Nam lectus ligula, malesuada et mauris a, bibendum faucibus mi. Phasellus ut interdum felis. Phasellus in odio pulvinar, porttitor urna eget, fringilla lectus. Aliquam sollicitudin est eros. Mauris consectetur quam vitae mauris interdum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+//Todo description
 
-Duis et egestas libero, imperdiet faucibus ipsum. Sed posuere eget urna vel feugiat. Vivamus a arcu sagittis, fermentum urna dapibus, congue lectus. Fusce vulputate porttitor nisl, ac cursus elit volutpat vitae. Nullam vitae ipsum egestas, convallis quam non, porta nibh. Morbi gravida erat nec neque bibendum, eu pellentesque velit posuere. Fusce aliquam erat eu massa eleifend tristique.
+## Creating
 
-Sed consequat sollicitudin ipsum eget tempus. Integer a aliquet velit. In justo nibh, pellentesque non suscipit eget, gravida vel lacus. Donec odio ante, malesuada in massa quis, pharetra tristique ligula. Donec eros est, tristique eget finibus quis, semper non nisl. Vivamus et elit nec enim ornare placerat. Sed posuere odio a elit cursus sagittis.
+1. Go to Test Plans page.
 
-Phasellus feugiat purus eu tortor ultrices finibus. Ut libero nibh, lobortis et libero nec, dapibus posuere eros. Sed sagittis euismod justo at consectetur. Nulla finibus libero placerat, cursus sapien at, eleifend ligula. Vivamus elit nisl, hendrerit ac nibh eu, ultrices tempus dui. Nam tellus neque, commodo non rhoncus eu, gravida in risus. Nullam id iaculis tortor.
+2. Click **Create Test Plan** button and fill out the name field.
 
-Nullam at odio in sem varius tempor sit amet vel lorem. Etiam eu hendrerit nisl. Fusce nibh mauris, vulputate sit amet ex vitae, congue rhoncus nisl. Sed eget tellus purus. Nullam tempus commodo erat ut tristique. Cras accumsan massa sit amet justo consequat eleifend. Integer scelerisque vitae tellus id consectetur.
+:::important
+
+Use only a unique name for creating a test plan!
+
+:::
+
+3. The created test plan will immediately appear on the Test Plans page and will be managed.
+
+:::note
+
+Test Plan can be managed by admin and lead. See more about [roles](/users/#roles).
+
+:::
+
+## Test Plan Details
+
+Click **See details** button for the certain test plan.
+
+You will see all information about this test plan like name, [tests list](/tests), [settings](/test-plan-settings), and [tests flakiness report](/flaky-tests).
+
+## Adding Tests to Test Plan
+
+1. Go to a certain Test Plan page.
+
+2. Click **Add Tests** button.
+
+3. On the [Tests](/tests) page select tests that you want to add to the Test Plan.
+
+4. Click **Add To Test Plan** button then select a certain Test Plan and confirm the action.
+
+:::note
+
+Adding duplicate [tests](/tests) will be ignored.
+
+:::
+
+5. Tests will add to the Test Plan. Comeback and manage it.
+
+## Deleting Tests from Test Plan
+
+1. Go to certain Test Plan page.
+
+2. Select tests that you want to delete.
+
+3. Click **Delete** button and confirm the action.
+
+## Test Plan Settings
+
+1. Go to a certain Test Plan page.
+
+2. Click **Settings** button.
+
+3. You will see all Settings for the certain test plan.
+
+:::note
+
+[Test Plan Settings](/test-plan-settings) can be managed only by admin. See more about [roles](/users/#roles).
+
+:::
+
+## Deleting Test Plan
+
+1. Go to a certain Test Plan page.
+
+2. Click **Delete** button at the header then confirm the action.
+
+3. Test Plan will delete and you will redirect to the [Test Plans](/test-plans#introduction) page.
