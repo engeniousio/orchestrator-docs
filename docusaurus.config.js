@@ -13,7 +13,7 @@ module.exports = {
       logo: {
         alt: "Test Orchestrator",
         src: "img/logo.svg",
-        href: "../",
+        href: "https://orchestrator.engenious.io/",
         target: "_self",
       },
       items: [

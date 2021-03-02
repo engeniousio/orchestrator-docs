@@ -10,7 +10,7 @@ module.exports = {
       "settings",
       "nodes",
     ],
-    Guides: ["envvars"],
+    Guides: ["env-vars"],
     Integrations: ["circle-ci", "jenkins"],
   },
 };
