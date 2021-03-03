@@ -9,11 +9,11 @@ You can invite users to Test Orchestrator. Invited users will see all test plans
 
 1. Go the Users page.
 
-2. Click **Invite User** button and fill out all fields: name, email, and select [user role](/docs/users#user-roles). Then click **Send Invite**.
+2. Click **Invite User** button and fill out all fields: name, email, and select [user role](/docs/users#user-roles). Then click **Send Invitation**.
 
 :::important
 
-Use only real emails for sending invites!
+Use only real emails for sending invitations!
 
 :::
 
