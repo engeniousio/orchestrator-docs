@@ -5,9 +5,15 @@ title: Test Plans Settings
 
 ## Changing settings
 
+1. Go to a certain Test Plan page.
+
+2. Make changes.
+
+3. Click **Update** button.
+
 ## Reset settings
 
-You can reset all settings include [nodes](/nodes) and [environment variables](/env-vars) to [default (global settings)](/settings).
+You can reset all settings include [environment variables](/env-vars) to [default (global settings)](/settings).
 
 1. Go to a certain Test Plan page.
 
@@ -17,9 +23,9 @@ You can reset all settings include [nodes](/nodes) and [environment variables](/
 
 :::important
 
-[Test Plan Settings](/test-plan-settings) will duplicate [Global Settings](/settings).
+After reset the [Test Plan Settings](/test-plan-settings) it will duplicate [Global Settings](/settings).
 
-:::s
+:::
 
 ## Toggle node status
 
@@ -29,4 +35,6 @@ You can enable or disable a certain [node](/nodes) for [Test Plan](/test-plans#t
 
 2. Click **Settings** button.
 
-3. Click on switcher for a certain node.
+3. Click switch for a certain node.
+
+4. Click **Update** button.

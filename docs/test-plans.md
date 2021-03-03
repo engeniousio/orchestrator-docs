@@ -55,13 +55,13 @@ Adding duplicate [tests](/tests) will be ignored.
 
 2. Select tests that you want to delete.
 
-3. Click **Delete** button and confirm the action.
+3. Click **Delete tests** button and confirm the action.
 
 ## Test Plan Settings
 
 1. Go to a certain Test Plan page.
 
-2. Click **Settings** button.
+2. Click **Plan Settings** button.
 
 3. You will see all Settings for the certain test plan.
 
@@ -75,6 +75,6 @@ Adding duplicate [tests](/tests) will be ignored.
 
 1. Go to a certain Test Plan page.
 
-2. Click **Delete** button at the header then confirm the action.
+2. Click **Delete Plan** button at the header then confirm the action.
 
 3. Test Plan will delete and you will redirect to the [Test Plans](/test-plans#introduction) page.

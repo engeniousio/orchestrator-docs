@@ -31,7 +31,7 @@ swift build -c release
 
 :::tip
 
-The Sift can run without --test-plan param, Test Orchestrator will provide the default test-plan name
+Test Orchestrator always will provide the default test-plan name with the name: default_ios_plan or default_android_plan
 
 :::
 
