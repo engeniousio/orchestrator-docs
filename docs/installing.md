@@ -5,14 +5,14 @@ title: Installing Sift
 
 ## Requirements:
 
-### <Highlight color="#4bb462">Sift Android</Highlight>
+### <Highlight color="#4bb462">Android</Highlight>
 
 - Android SDK
 - Java 8
 - Test APK should have androidTestImplementation 'com.github.TarCV.tongs:tongs-ondevice:0.5' dependency
   (This dependency will be optional in the future)
 
-### <Highlight color="#1877F2">Sift IOS</Highlight>
+### <Highlight color="#1877F2">IOS</Highlight>
 
 - Xcode 12
 
@@ -24,13 +24,13 @@ title: Installing Sift
 
 3. Type git clone, and then paste the URL of Sift.
 
-### <Highlight color="#4bb462">Sift Android</Highlight>
+### <Highlight color="#4bb462">Android</Highlight>
 
 ```
 git clone https://github.com/engeniousio/sift-android.git
 ```
 
-### <Highlight color="#1877F2">Sift IOS</Highlight>
+### <Highlight color="#1877F2">IOS</Highlight>
 
 ```
 git clone https://github.com/engeniousio/sift.git

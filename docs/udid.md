@@ -3,4 +3,8 @@ id: udid
 title: Unique Device Identifier
 ---
 
-[UDID](https://en.wikipedia.org/wiki/UDID "UDID Wiki")
+Read about UDID on Wikipedia [UDID](https://en.wikipedia.org/wiki/UDID "UDID Wiki").
+
+## Device
+
+## Simulator

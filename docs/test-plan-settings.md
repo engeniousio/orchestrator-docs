@@ -38,3 +38,19 @@ You can enable or disable a certain [node](/nodes) for [Test Plan](/test-plans#t
 3. Click switch for a certain node.
 
 4. Click **Update** button.
+
+## Adding Environment Variable
+
+Called Instrumentation Argument for Android [Platform](/platforms).
+
+More about [Enviroment Variables](/env-vars).
+
+1. Go to a certain Test Plan page.
+
+2. Click **Add variable** in the Environment Variables section.
+
+3. Fill out all fields in the form.
+
+4. Click **Add** button.
+
+5. Click **Update** button.

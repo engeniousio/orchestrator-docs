@@ -11,13 +11,13 @@ title: Running Sift with Orchestrator
 
 3. Run build command:
 
-### <Highlight color="#4bb462">Sift Android</Highlight>
+### <Highlight color="#4bb462">Android</Highlight>
 
 ```
 ./gradlew assemble
 ```
 
-### <Highlight color="#1877F2">Sift IOS</Highlight>
+### <Highlight color="#1877F2">IOS</Highlight>
 
 ```
 swift build -c release
@@ -37,13 +37,13 @@ Test Orchestrator always will provide the default test-plan name with the name: 
 
 3. Run command:
 
-### <Highlight color="#4bb462">Sift Android</Highlight>
+### <Highlight color="#4bb462">Android</Highlight>
 
 ```
 ?????
 ```
 
-### <Highlight color="#1877F2">Sift IOS</Highlight>
+### <Highlight color="#1877F2">IOS</Highlight>
 
 ```
 sift orchestartor --token 'your token' --test-plan 'name of testplan'

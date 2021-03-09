@@ -14,7 +14,7 @@ module.exports = {
       "nodes",
     ],
     "Test Management": ["test-status", "test-result", "flaky-tests"],
-    Guides: ["udid", "env-vars"],
+    Guides: ["configuration", "udid", "env-vars"],
     Integrations: ["circle-ci", "jenkins"],
   },
 };
