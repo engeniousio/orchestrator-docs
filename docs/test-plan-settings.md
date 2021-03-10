@@ -5,6 +5,8 @@ title: Test Plans Settings
 
 ## Changing settings
 
+See all [configuration](/configuration) options for SIFT.
+
 1. Go to a certain Test Plan page.
 
 2. Make changes.

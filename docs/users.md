@@ -29,15 +29,15 @@ The created invite is available for 24 hours. Upon the expiration of this period
 
 Test orchestrator supports multiple users a role-based access control with three predefined data-access roles: member, lead, and admin. Each role includes a set of authorized actions (read, write, etc.) permitted on the organization.
 
-| Entity               |   Member    |         Lead |        Admin |
-| -------------------- | :---------: | -----------: | -----------: |
-| `Invites`            |   _deny_    |       _deny_ | _Read-write_ |
+| Entity               |   Member    |     Lead     |    Admin     |
+| -------------------- | :---------: | :----------: | :----------: |
+| `Invites`            |   _deny_    |    _deny_    | _Read-write_ |
 | `Tests`              | _Read-only_ | _Read-write_ | _Read-write_ |
 | `Test plans`         | _Read-only_ | _Read-write_ | _Read-write_ |
-| `Users`              | _Read-only_ |  _Read-only_ | _Read-write_ |
-| `Global Settings`    | _Read-only_ |  _Read-only_ | _Read-write_ |
-| `Test Plan Settings` | _Read-only_ |  _Read-only_ | _Read-write_ |
-| `Nodes`              | _Read-only_ |  _Read-only_ | _Read-write_ |
+| `Users`              | _Read-only_ | _Read-only_  | _Read-write_ |
+| `Global Settings`    | _Read-only_ | _Read-only_  | _Read-write_ |
+| `Test Plan Settings` | _Read-only_ | _Read-only_  | _Read-write_ |
+| `Nodes`              | _Read-only_ | _Read-only_  | _Read-write_ |
 
 ## User management
 

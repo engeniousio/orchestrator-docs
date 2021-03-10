@@ -3,7 +3,7 @@ id: settings
 title: Global Settings
 ---
 
-[Global Settings](/settings) provide you all opportunities for setup [SIFT](/sift) config and run it for each [Test Plan](/test-plans).
+[Global Settings](/settings) provide you all opportunities for setup [SIFT configuration](/configuration) and run it for each [Test Plan](/test-plans).
 
 :::tip
 

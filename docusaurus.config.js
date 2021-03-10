@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Test Orchestrator",
+  title: "Test Orchestrator Documentation",
   url: "https://staging.orchestrator.engenious.io",
   baseUrl: "/docs/",
   onBrokenLinks: "throw",
