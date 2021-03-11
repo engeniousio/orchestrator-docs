@@ -11,7 +11,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 2. Swipe right and left to see all test-plans with the report.
 
-<img alt="setting" src={useBaseUrl("img/test-result.trend.svg")} />
+<img alt="test result trend" src={useBaseUrl("gif/trend.gif")} />
 
 :::note
 

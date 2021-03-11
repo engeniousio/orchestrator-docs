@@ -3,6 +3,8 @@ id: test-plans
 title: Test Plans
 ---
 
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
 //Todo description
 
 ## Creating
@@ -18,6 +20,8 @@ Use only a unique name for creating a test plan!
 :::
 
 3. The created test plan will immediately appear on the Test Plans page and will be managed.
+
+<img alt="creating test plan" src={useBaseUrl("gif/creating-test-plan.gif")} />
 
 :::note
 
@@ -41,6 +45,8 @@ You will see all information about this test plan like name, [tests list](/tests
 
 4. Click **Add To Test Plan** button then select a certain Test Plan and confirm the action.
 
+<img alt="adding tests" src={useBaseUrl("gif/adding-tests.gif")} />
+
 :::note
 
 Adding duplicate [tests](/tests) will be ignored.
@@ -56,6 +62,8 @@ Adding duplicate [tests](/tests) will be ignored.
 2. Select tests that you want to delete.
 
 3. Click **Delete tests** button and confirm the action.
+
+<img alt="deleting tests from Test Plan" src={useBaseUrl("gif/deleting-tests-from-plan.gif")} />
 
 ## Test Plan Settings
 
@@ -78,3 +86,5 @@ Adding duplicate [tests](/tests) will be ignored.
 2. Click **Delete Plan** button at the header then confirm the action.
 
 3. Test Plan will delete and you will redirect to the [Test Plans](/test-plans#introduction) page.
+
+<img alt="deleting test plan" src={useBaseUrl("gif/deleting-test-plan.gif")} />

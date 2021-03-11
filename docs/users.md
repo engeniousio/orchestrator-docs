@@ -13,7 +13,7 @@ You can invite users to Test Orchestrator. Invited users will see all test plans
 
 2. Click **Invite User** button and fill out all fields: name, email, and select [user role](/docs/users#user-roles). Then click **Send Invitation**.
 
-<img alt="change user role" src={useBaseUrl("gif/sending-the-invitation.gif")} />
+<img alt="sending an invitation" src={useBaseUrl("gif/sending-an-invitation.gif")} />
 
 :::important
 
@@ -23,7 +23,7 @@ Use only real emails for sending invitations!
 
 3. The user will receive an invitation email with a link to accept the invitation.
 
-<img alt="change user role" src={useBaseUrl("gif/creating-user.gif")} />
+<img alt="creating user" src={useBaseUrl("gif/creating-user.gif")} />
 
 :::note
 
