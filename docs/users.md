@@ -3,6 +3,8 @@ id: users
 title: Users
 ---
 
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
 ## Invite users (admin only)
 
 You can invite users to Test Orchestrator. Invited users will see all test plans and tests run for the organization.
@@ -11,6 +13,8 @@ You can invite users to Test Orchestrator. Invited users will see all test plans
 
 2. Click **Invite User** button and fill out all fields: name, email, and select [user role](/docs/users#user-roles). Then click **Send Invitation**.
 
+<img alt="change user role" src={useBaseUrl("gif/sending-the-invitation.gif")} />
+
 :::important
 
 Use only real emails for sending invitations!
@@ -18,6 +22,8 @@ Use only real emails for sending invitations!
 :::
 
 3. The user will receive an invitation email with a link to accept the invitation.
+
+<img alt="change user role" src={useBaseUrl("gif/creating-user.gif")} />
 
 :::note
 
@@ -43,8 +49,16 @@ Test orchestrator supports multiple users a role-based access control with three
 
 According to the [user roles](/docs/users#user-roles), the admin can manage users. On the Users page is a table list of users with users full information like name, email, last activity, and role. Admin can delete one or several users and change the role.
 
+### Changing role
+
 :::important
 
 Admin cannot perform actions with another admin! Be attentive when choosing a role for a user.
 
 :::
+
+<img alt="change user role" src={useBaseUrl("gif/change-role.gif")} />
+
+### Deleting user
+
+<img alt="deleting user" src={useBaseUrl("gif/deleting-user.gif")} />

@@ -49,6 +49,8 @@ Test Orchestrator always will provide the default test-plan name with the name: 
 sift orchestartor --token 'your token' --test-plan 'name of testplan'
 ```
 
+More about [configuration SIFT](/configuration).
+
 export const Highlight = ({children, color}) => ( <span style={{
       backgroundColor: color,
       borderRadius: '2px',

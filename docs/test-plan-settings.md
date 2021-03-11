@@ -1,6 +1,6 @@
 ---
 id: test-plan-settings
-title: Test Plans Settings
+title: Test Plan Settings
 ---
 
 ## Changing settings
