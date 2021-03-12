@@ -3,6 +3,8 @@ id: settings
 title: Global Settings
 ---
 
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
 [Global Settings](/settings) provide you all opportunities for setup [SIFT configuration](/configuration) and run it for each [Test Plan](/test-plans).
 
 :::tip
@@ -24,6 +26,8 @@ Test Orchestrator provides separate tokens for each [platform](/platforms).
 
 3. Use the token for running [SIFT](/sift) and Circle Ci.
 
+<img alt="copy token" src={useBaseUrl("gif/copy-token-min.gif")} />
+
 ## Generate a new token
 
 1. Go to [Global Settings](/settings) page.
@@ -31,6 +35,8 @@ Test Orchestrator provides separate tokens for each [platform](/platforms).
 2. Click **Generate New** and confirm the action.
 
 3. Use a new for running [SIFT](/sift) and Circle Ci.
+
+<img alt="generate new token" src={useBaseUrl("gif/generate-token-min.gif")} />
 
 ## Adding Environment Variable
 
@@ -47,3 +53,15 @@ More about [Enviroment Variables](/env-vars).
 4. Click **Add** button.
 
 5. Click **Update** button.
+
+<img alt="creating environment variables" src={useBaseUrl("gif/creating-env-var-min.gif")} />
+
+## Deleting Environment Variable
+
+1. Go to [Global Settings](/settings) page.
+
+2. Click the red trash button nearly the certain environment variable.
+
+3. Click **Update** button.
+
+<img alt="deleting environment variables" src={useBaseUrl("gif/deleting-env-vars-min.gif")} />
