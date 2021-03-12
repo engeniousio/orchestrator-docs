@@ -21,7 +21,7 @@ Use only a unique name for creating a test plan!
 
 3. The created test plan will immediately appear on the Test Plans page and will be managed.
 
-<img alt="creating test plan" src={useBaseUrl("gif/creating-test-plan.gif")} />
+<img alt="creating test plan" src={useBaseUrl("gif/creating-test-plan-min.gif")} />
 
 :::note
 
@@ -45,7 +45,7 @@ You will see all information about this test plan like name, [tests list](/tests
 
 4. Click **Add To Test Plan** button then select a certain Test Plan and confirm the action.
 
-<img alt="adding tests" src={useBaseUrl("gif/adding-tests.gif")} />
+<img alt="adding tests" src={useBaseUrl("gif/adding-tests-from-plan-min.gif")} />
 
 :::note
 
@@ -63,7 +63,7 @@ Adding duplicate [tests](/tests) will be ignored.
 
 3. Click **Delete tests** button and confirm the action.
 
-<img alt="deleting tests from Test Plan" src={useBaseUrl("gif/deleting-tests-from-plan.gif")} />
+<img alt="deleting tests from Test Plan" src={useBaseUrl("gif/deleting-tests-from-plan-min.gif")} />
 
 ## Test Plan Settings
 
@@ -87,4 +87,4 @@ Adding duplicate [tests](/tests) will be ignored.
 
 3. Test Plan will delete and you will redirect to the [Test Plans](/test-plans#introduction) page.
 
-<img alt="deleting test plan" src={useBaseUrl("gif/deleting-test-plan.gif")} />
+<img alt="deleting test plan" src={useBaseUrl("gif/deleting-test-plan-min.gif")} />

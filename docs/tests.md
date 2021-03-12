@@ -15,7 +15,7 @@ All members of your organization can see test list.
 
 We provide able to fully manage test.
 
-<img alt="test" src={useBaseUrl("img/test.svg")} />
+<!-- <img alt="test" src={useBaseUrl("img/test.svg")} /> -->
 
 1. Navigate to Test Plan page.
 
@@ -25,6 +25,8 @@ We provide able to fully manage test.
 
 The test can be modified manually.
 You can change [status](/test-status), Jira link, TestRail link, and comment.
+
+<img alt="updating test" src={useBaseUrl("gif/updating-test-min.gif")} />
 
 :::note
 
@@ -36,9 +38,11 @@ Test can be managed by admin and lead. See more about [roles](/users/#roles).
 
 1. Navigate to Tests page.
 
-2. Select test or tests that you want to add to [Test Plan](/test-plans#test-plan-details).
+2. Select tests that you want to add to [Test Plan](/test-plans#test-plan-details).
 
 3. Click **Add to Test Plan** button then select a certain Test Plan and confirm the action.
+
+<img alt="adding tests" src={useBaseUrl("gif/adding-tests-min.gif")} />
 
 :::note
 

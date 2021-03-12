@@ -17,7 +17,7 @@ See [Flaky tests](/flaky-tests)
 
 3. Scroll down and up to see all report.
 
-<img alt="flaky tests" src={useBaseUrl("gif/flaky-tests.gif")} />
+<img alt="flaky tests" src={useBaseUrl("gif/flaky-tests-min.gif")} />
 
 :::note
 

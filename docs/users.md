@@ -13,7 +13,7 @@ You can invite users to Test Orchestrator. Invited users will see all test plans
 
 2. Click **Invite User** button and fill out all fields: name, email, and select [user role](/docs/users#user-roles). Then click **Send Invitation**.
 
-<img alt="sending an invitation" src={useBaseUrl("gif/sending-an-invitation.gif")} />
+<img alt="sending an invitation" src={useBaseUrl("gif/sending-an-invitation-min.gif")} />
 
 :::important
 
@@ -23,7 +23,7 @@ Use only real emails for sending invitations!
 
 3. The user will receive an invitation email with a link to accept the invitation.
 
-<img alt="creating user" src={useBaseUrl("gif/creating-user.gif")} />
+<img alt="creating user" src={useBaseUrl("gif/creating-user-min.gif")} />
 
 :::note
 
@@ -57,8 +57,8 @@ Admin cannot perform actions with another admin! Be attentive when choosing a ro
 
 :::
 
-<img alt="change user role" src={useBaseUrl("gif/change-role.gif")} />
+<img alt="change user role" src={useBaseUrl("gif/change-role-min.gif")} />
 
 ### Deleting user
 
-<img alt="deleting user" src={useBaseUrl("gif/deleting-user.gif")} />
+<img alt="deleting user" src={useBaseUrl("gif/deleting-user-min.gif")} />
