@@ -3,6 +3,8 @@ id: nodes
 title: Sift Nodes
 ---
 
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
 ## Node List
 
 You can manage Sift Nodes.
@@ -16,6 +18,8 @@ You can manage Sift Nodes.
 3. Fill out all fields in the form.
 
 4. Click **Create** button.
+
+<img alt="creating a new node" src={useBaseUrl("gif/creating-node-min.gif")} />
 
 :::important
 
@@ -33,6 +37,8 @@ The new node must include at least one [device or simulator](/udid).
 
 4. Click **Update** button.
 
+<img alt="updating the node" src={useBaseUrl("gif/updating-node-min.gif")} />
+
 :::important
 
 The modified node must include at least one [device or simulator](/udid).
@@ -44,6 +50,8 @@ The modified node must include at least one [device or simulator](/udid).
 1. Go to the Sift Nodes page.
 
 2. Click the red trash button nearly the certain node and confirm the action.
+
+<img alt="deleting the node" src={useBaseUrl("gif/deleting-node-min.gif")} />
 
 ## Device and simulator
 
@@ -76,6 +84,8 @@ Each node must include at least one [device or simulator](/udid).
 3. Edit the device or simulator [UDID](/udid) in the form.
 
 4. Click **Update** button.
+
+<img alt="actions with udids" src={useBaseUrl("gif/actions-with-udids-min.gif")} />
 
 ### Deleting device or simulator
 
