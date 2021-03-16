@@ -52,7 +52,7 @@ Adding duplicate [tests](/tests) will be ignored.
 
 4. Tests will add to the Test Plan.
 
-## Global deleting tests
+<!-- ## Global deleting tests
 
 You can delete tests from your organizations and it will be deleted from [Test List](/tests/#test-list) and all [Test Plans](/test-plans).
 
@@ -60,4 +60,4 @@ You can delete tests from your organizations and it will be deleted from [Test L
 
 2. Select test or tests that you want to delete.
 
-3. Click **Delete tests** button and confirm the action.
+3. Click **Delete tests** button and confirm the action. -->
