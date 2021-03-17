@@ -5,7 +5,7 @@ title: Test Plans
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
-//Todo description
+Test plans comprise a list of [tests](/tests) and settings which you can set up and help you see the general [status](/test-status), scope of the test activity.
 
 ## Creating
 
@@ -33,7 +33,7 @@ Test Plan can be managed by admin and lead. See more about [roles](/users/#roles
 
 Click **See details** button for the certain test plan.
 
-You will see all information about this test plan like name, [tests list](/tests), [settings](/test-plan-settings), and [tests flakiness report](/flaky-tests).
+You will see all information about this test plan like name, [tests list](/tests), [settings](/test-plan-settings), and [tests flakiness report](/flaky-tests-report).
 
 ## Adding Tests to Test Plan
 

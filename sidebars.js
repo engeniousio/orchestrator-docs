@@ -13,7 +13,7 @@ module.exports = {
       "test-plan-settings",
       "nodes",
     ],
-    "Test Management": ["test-status", "test-result", "flaky-tests"],
+    "Test Management": ["test-status", "test-result"],
     Guides: ["configuration", "udid", "env-vars"],
     Integrations: ["circle-ci", "jenkins"],
   },

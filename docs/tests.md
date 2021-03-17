@@ -5,7 +5,7 @@ title: Tests
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
-// todo description
+In a single test you can see and edit its [status](/test-status), links, additional information. The list of tests shows you all existing tests and their statuses. Filters help you find necessary tests quiches and by selecting certain tests you can add them to [test plans](/test-plans) or delete them.
 
 ## Test List
 
