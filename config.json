@@ -19,10 +19,16 @@
     "lvl6": "article h6",
     "text": "article p, article li, article td:last-child"
   },
+  "js_render": true,
   "strip_chars": " .,;:#",
   "custom_settings": {
-    "separatorsToIndex": "_",
-    "attributesForFaceting": ["language", "version", "type", "docusaurus_tag"],
+    "attributesForFaceting": [
+      "language",
+      "version",
+      "tags",
+      "type",
+      "docusaurus_tag"
+    ],
     "attributesToRetrieve": [
       "hierarchy",
       "content",
