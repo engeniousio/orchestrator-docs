@@ -8,6 +8,12 @@ module.exports = {
   organizationName: "engenious", // Usually your GitHub org/user name.
   projectName: "testorchestrator", // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: "aa087cfb241f783b9ff95d4c1130ea00",
+      appId: "96MJX1ECXU",
+      indexName: "orchestrator",
+      contextualSearch: true,
+    },
     navbar: {
       title: "Test Orchestrator",
       logo: {
