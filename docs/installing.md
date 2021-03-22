@@ -3,6 +3,10 @@ id: installing
 title: Installing Sift
 ---
 
+import Tabs from '@theme/Tabs';
+
+import TabItem from '@theme/TabItem';
+
 ## Requirements:
 
 ### <Highlight color="#4bb462">Android</Highlight>
@@ -24,17 +28,27 @@ title: Installing Sift
 
 3. Type git clone, and then paste the URL of Sift.
 
-### <Highlight color="#4bb462">Android</Highlight>
+<Tabs
+  groupId="platforms"
+  defaultValue="ios"
+  values={[
+    { label: "IOS", value: "ios" },
+    { label: "Android", value: "android" },
+  ]}
+>
+  <TabItem value="ios">
 
-```
-git clone https://github.com/engeniousio/sift-android.git
-```
+  ```
+  git clone https://github.com/engeniousio/sift.git
+  ```
+  </TabItem>
+  <TabItem value="android">
 
-### <Highlight color="#1877F2">IOS</Highlight>
-
-```
-git clone https://github.com/engeniousio/sift.git
-```
+  ```
+  git clone https://github.com/engeniousio/sift-android.git
+  ```  
+  </TabItem>
+</Tabs>
 
 4. Press Enter to create your local clone.
 

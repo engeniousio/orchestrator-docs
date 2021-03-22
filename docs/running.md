@@ -3,6 +3,10 @@ id: running
 title: Running Sift with Orchestrator
 ---
 
+import Tabs from '@theme/Tabs';
+
+import TabItem from '@theme/TabItem';
+
 ## Step 1 (Build Sift):
 
 1. Open Terminal.
@@ -11,17 +15,27 @@ title: Running Sift with Orchestrator
 
 3. Run build command:
 
-### <Highlight color="#4bb462">Android</Highlight>
+<Tabs
+  groupId="platforms"
+  defaultValue="ios"
+  values={[
+    { label: "IOS", value: "ios" },
+    { label: "Android", value: "android" },
+  ]}
+>
+  <TabItem value="ios">
 
-```
-./gradlew assemble
-```
+  ```
+  swift build -c release
+  ```
+  </TabItem>
+  <TabItem value="android">
 
-### <Highlight color="#1877F2">IOS</Highlight>
-
-```
-swift build -c release
-```
+  ```
+  ./gradlew assemble
+  ```  
+  </TabItem>
+</Tabs>
 
 ## Step 2 (Run Sift with Orchestrator):
 
@@ -37,17 +51,27 @@ Test Orchestrator always will provide the default test-plan name with the name: 
 
 3. Run command:
 
-### <Highlight color="#4bb462">Android</Highlight>
+<Tabs
+  groupId="platforms"
+  defaultValue="ios"
+  values={[
+    { label: "IOS", value: "ios" },
+    { label: "Android", value: "android" },
+  ]}
+>
+  <TabItem value="ios">
 
-```
-?????
-```
+  ```
+  sift orchestartor --token 'your token' --test-plan 'name of testplan'
+  ```
+  </TabItem>
+  <TabItem value="android">
 
-### <Highlight color="#1877F2">IOS</Highlight>
-
-```
-sift orchestartor --token 'your token' --test-plan 'name of testplan'
-```
+  ```
+  ?????
+  ```  
+  </TabItem>
+</Tabs>
 
 More about [configuration SIFT](/configuration).
 
