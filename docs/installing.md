@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
 
 - Xcode 12
 
-## Installing:
+## Install:
 
 1. Open Terminal.
 
@@ -51,6 +51,36 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 4. Press Enter to create your local clone.
+
+## Build:
+
+1. Open Terminal.
+
+2. Make sure that you in the current working directory.
+
+3. Run build command:
+
+<Tabs
+  groupId="platforms"
+  defaultValue="ios"
+  values={[
+    { label: "IOS", value: "ios" },
+    { label: "Android", value: "android" },
+  ]}
+>
+  <TabItem value="ios">
+
+  ```
+  swift build -c release
+  ```
+  </TabItem>
+  <TabItem value="android">
+
+  ```
+  ./gradlew assemble
+  ```  
+  </TabItem>
+</Tabs>
 
 export const Highlight = ({children, color}) => ( <span style={{
       backgroundColor: color,

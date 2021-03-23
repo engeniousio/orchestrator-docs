@@ -7,38 +7,6 @@ import Tabs from '@theme/Tabs';
 
 import TabItem from '@theme/TabItem';
 
-## Step 1 (Build Sift):
-
-1. Open Terminal.
-
-2. Make sure that you in the current working directory.
-
-3. Run build command:
-
-<Tabs
-  groupId="platforms"
-  defaultValue="ios"
-  values={[
-    { label: "IOS", value: "ios" },
-    { label: "Android", value: "android" },
-  ]}
->
-  <TabItem value="ios">
-
-  ```
-  swift build -c release
-  ```
-  </TabItem>
-  <TabItem value="android">
-
-  ```
-  ./gradlew assemble
-  ```  
-  </TabItem>
-</Tabs>
-
-## Step 2 (Run Sift with Orchestrator):
-
 1. Copy the [organization token](/settings/#token) from the dashboard, see the page "Global settings" (read more about [Global Settings](/settings/)).
 
 2. In the terminal paste token and test plan name.

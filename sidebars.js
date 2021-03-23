@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     Overview: ["orchestrator", "sift"],
-    "Getting started": ["installing", "running"],
+    "Getting started": ["quick-start", "installing", "running"],
     Dashboard: [
       "users",
       "test-plans",
