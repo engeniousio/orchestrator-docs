@@ -17,15 +17,15 @@ You can manage Sift Nodes.
 
 3. Fill out all fields in the form.
 
+:::important
+
+The new node must include [SSH key](/ssh) path and include at least one [device or simulator](/udid).
+
+:::
+
 4. Click **Create** button.
 
 <img alt="creating a new node" src={useBaseUrl("gif/creating-node-min.gif")} />
-
-:::important
-
-The new node must include at least one [device or simulator](/udid).
-
-:::
 
 ## Modifying node
 

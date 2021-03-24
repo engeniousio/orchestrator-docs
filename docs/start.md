@@ -1,6 +1,6 @@
 ---
-id: quick-start
-title: Quick Start
+id: start
+title: Start
 ---
 
 1. [Install Sift](/installing#installing)
