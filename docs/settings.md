@@ -24,7 +24,7 @@ Test Orchestrator provides separate tokens for each [platform](/platforms).
 
 2. Click copy icon.
 
-3. Use the token for running [SIFT](/sift) and Circle Ci.
+3. Use the token for running [SIFT](/sift).
 
 <img alt="copy token" src={useBaseUrl("gif/copy-token-min.gif")} />
 
@@ -34,7 +34,7 @@ Test Orchestrator provides separate tokens for each [platform](/platforms).
 
 2. Click **Generate New** and confirm the action.
 
-3. Use a new for running [SIFT](/sift) and Circle Ci.
+3. Use a new for running [SIFT](/sift).
 
 <img alt="generate new token" src={useBaseUrl("gif/generate-token-min.gif")} />
 

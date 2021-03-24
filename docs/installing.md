@@ -97,6 +97,12 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
   ```
   swift build -c release
   ```
+  <img alt="Build sift" src={useBaseUrl("gif/build-min.gif")} />
+
+  Your executable will be stored here: ```.../sift/.build/x86_64-apple-macosx/release/Sift```.
+
+  For easy access to Sift you can move generted Sift executable into your ```usr/local/bin``` folder. After that sift will be accessible directly from terminal
+
   </TabItem>
   <TabItem value="android">
 
@@ -105,8 +111,6 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
   ```  
   </TabItem>
 </Tabs>
-
-<img alt="Build sift" src={useBaseUrl("gif/build-min.gif")} />
 
 export const Highlight = ({children, color}) => ( <span style={{
       backgroundColor: color,

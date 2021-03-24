@@ -5,7 +5,7 @@ title: Start
 
 1. [Install Sift](/installing#installing)
 2. [Create a new node](/nodes#creating-a-new-node)
-3. [Setup global settings](/settings)
+3. [Set up global settings](/settings)
 4. Tell orchestrator about your tests
 5. [Create test plan](/test-plans#creating)
 6. [Add tests to test plan](/test-plans#adding-tests-to-test-plan)
