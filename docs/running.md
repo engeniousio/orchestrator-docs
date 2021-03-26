@@ -36,8 +36,8 @@ Test Orchestrator always will provide the default test-plan name with the name: 
   <TabItem value="android">
 
   ```
-  ?????
-  ```  
+  sift orchestartor --token 'your token' --test-plan 'name of testplan' --status 'quarantined'
+  ```
   </TabItem>
 </Tabs>
 
