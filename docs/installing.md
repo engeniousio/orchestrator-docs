@@ -107,8 +107,9 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
   <TabItem value="android">
 
   ```
-  ./gradlew assemble
+  ./gradlew installDist
   ```  
+  Sift binaries will be created in `runner/build/install` directory
   </TabItem>
 </Tabs>
 
