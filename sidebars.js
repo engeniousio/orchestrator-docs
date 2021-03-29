@@ -1,12 +1,12 @@
 module.exports = {
   someSidebar: {
     Overview: ["orchestrator", "sift"],
-    "Getting started": ["start", "installing", "running"],
+    "Getting started": ["start", "installing", "setup-orchestrator", "running"],
     Dashboard: [
+      "test-result-trend",
       "users",
       "test-plans",
       "tests",
-      "test-result-trend",
       "flaky-tests-report",
       "platforms",
       "settings",

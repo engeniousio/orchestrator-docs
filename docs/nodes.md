@@ -5,23 +5,21 @@ title: Sift Nodes
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
-## Node List
-
 You can manage Sift Nodes.
 
 ## Creating a new node
+
+:::warning
+
+The new node must include [SSH key](/ssh) path and include at least one [device or simulator](/udid).
+
+:::
 
 1. Go to the Sift Nodes page.
 
 2. Click **Add Node** button.
 
 3. Fill out all fields in the form.
-
-:::important
-
-The new node must include [SSH key](/ssh) path and include at least one [device or simulator](/udid).
-
-:::
 
 4. Click **Create** button.
 

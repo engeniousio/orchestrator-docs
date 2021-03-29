@@ -21,7 +21,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 >
   <TabItem value="ios">
     <ul>
-      <li>Xcode 12</li>
+      <li>Xcode 12+</li>
     </ul>
   </TabItem>
   <TabItem value="android">
@@ -38,9 +38,11 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 1. Open Terminal.
 
-2. Change the current working directory to the location where you want the cloned directory.
+2. Change the current working directory to the location where you want to store cloned SIFT repository.
 
-3. Copy and Paste the URL of Sift and press Enter to create your local clone.
+3. Copy the URL of SIFT from github.
+
+4. Use git clone command with URL to create your local copy.
 
 <Tabs
   groupId="platforms"
@@ -57,7 +59,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
   ```
   <img alt="Clone sift" src={useBaseUrl("gif/clone-sift-min.gif")} />
 
-  then
+    5.&nbsp;Go to the created directory and run setup script:
 
   ```
   sh make.sh
@@ -80,7 +82,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 1. Open Terminal.
 
-2. Make sure that you in the current working directory.
+2. Make sure that you are in the current working directory.
 
 3. Run build command:
 
@@ -99,9 +101,9 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
   ```
   <img alt="Build sift" src={useBaseUrl("gif/build-min.gif")} />
 
-  Your executable will be stored here: ```.../sift/.build/x86_64-apple-macosx/release/Sift```.
+  4.&nbsp;Your executable will be stored here: ```.../sift/.build/x86_64-apple-macosx/release/Sift```.
 
-  For easy access to Sift you can move generted Sift executable into your ```usr/local/bin``` folder. After that sift will be accessible directly from terminal
+  5.&nbsp;For easy access to Sift you can move generted Sift executable into your ```usr/local/bin``` folder. After that sift will be accessible directly from terminal from any location.
 
   </TabItem>
   <TabItem value="android">
