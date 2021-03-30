@@ -35,6 +35,8 @@ Test Orchestrator always will provide the default test-plan name with the name: 
   </TabItem>
   <TabItem value="android">
 
+  Go to the Project folder and run:
+
   ```
   sift orchestartor --token 'your token' --test-plan 'name of testplan' --status 'quarantined'
   ```

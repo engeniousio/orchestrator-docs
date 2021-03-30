@@ -11,6 +11,12 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 ## Requirements:
 
+:::important
+
+This guide only for Mac and Linux.
+
+:::
+
 <Tabs
   groupId="platforms"
   defaultValue="ios"
@@ -57,9 +63,10 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
   ```
   git clone https://github.com/engeniousio/sift.git
   ```
+  
   <img alt="Clone sift" src={useBaseUrl("gif/clone-sift-min.gif")} />
 
-    5.&nbsp;Go to the created directory and run setup script:
+  5.&nbsp;Go to the created directory and run setup script:
 
   ```
   sh make.sh
