@@ -110,7 +110,7 @@ This guide only for Mac and Linux.
 
   4.&nbsp;Your executable will be stored here: ```.../sift/.build/x86_64-apple-macosx/release/Sift```.
 
-  5.&nbsp;For easy access to Sift you can move generted Sift executable into your ```usr/local/bin``` folder. After that sift will be accessible directly from terminal from any location.
+  5.&nbsp;For easy access to Sift you can move generted Sift executable into your ```/usr/local/bin``` folder. After that sift will be accessible directly from terminal from any location.
 
   </TabItem>
   <TabItem value="android">

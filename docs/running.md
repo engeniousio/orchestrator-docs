@@ -30,7 +30,7 @@ Test Orchestrator always will provide the default test-plan name with the name: 
   <TabItem value="ios">
 
   ```
-  sift orchestartor --token 'your token' --test-plan 'name of testplan'
+  sift orchestrator --token 'your token' --test-plan 'name of testplan'
   ```
   </TabItem>
   <TabItem value="android">
@@ -38,7 +38,7 @@ Test Orchestrator always will provide the default test-plan name with the name: 
   Go to the Project folder and run:
 
   ```
-  sift orchestartor --token 'your token' --test-plan 'name of testplan' --status 'quarantined'
+  sift orchestrator --token 'your token' --test-plan 'name of testplan' --status 'quarantined'
   ```
   </TabItem>
 </Tabs>

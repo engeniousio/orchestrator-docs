@@ -3,6 +3,8 @@ id: ssh
 title: Set up SSH keys
 ---
 
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
 ## Step 1: Create the RSA key pair
 
 The first step is to create the key pair on the client machine (there is a good chance that this will just be your computer):
@@ -70,6 +72,10 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
 ## Step 3: Try out your login
+
+Make sure that remote login is allowed on your machine:
+
+<img alt="ssh on" src={useBaseUrl("img/ssh-min.png")} />
 
 ```
 ssh username@ip-address

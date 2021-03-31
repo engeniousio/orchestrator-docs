@@ -9,7 +9,13 @@ import TabItem from '@theme/TabItem';
 
 ## Set up your SSH
 
-Go to the [set up SSH key guide](/ssh) and do all steps to create a new key and then return to this page.
+If you can connect to your node (or local machine) via ssh without password, then connection set up is right:
+
+[try out your login](/ssh#step-3-try-out-your-login) and continue set up Orchestrator.
+
+or:
+
+go to the [set up SSH key](/ssh) guide and do all steps to create a new key and then return to this page.
 
 ## Create a new node
 
@@ -29,7 +35,7 @@ The new node must include [SSH key](/ssh) path and include at least one [device 
 - Host: Your SIFT machine is going to connect to this node via ssh. Please provide the IP address of the node. Use `127.0.0.1` to run sift on local machine.
 - Port: Your SIFT machine is going to connect to this node via ssh. Please provide the port. If you use local connections the default port will be `22`.
 - Username: Name of your local machine.
-- Path to private key: Your SIFT machine is going to connect to this node via ssh. Please provide the absolute path on the SIFT machine to a valid ssh private key which will be used for establishing a connection. By default it's located in `~/.ssh/id_rsa`.
+- Path to private key: Your SIFT machine is going to connect to this node via ssh. Please provide the absolute path on the SIFT machine to a valid ssh private key which will be used for establishing a connection. By default it's located in `/Users/user_name/.ssh/id_rsa` where user_name is your machine username.
 
 :::note
 Please do not provide the value of the private key itself - this information is private and you should not share it with us.
@@ -215,8 +221,8 @@ Cooming soon. You can read more about Enviroment variables [here](/env-vars).
 
 ## Create test plan
 
-Go to the [guide](/test-plans#creating), do all steps and return here.
+Go to the [guide](/test-plans#creating), create a new test plan and return here.
 
 ## Add tests to test plan
 
-Go to the [guide](/test-plans#adding-tests-to-test-plan), do all steps and return here.
+Go to the [guide](/test-plans#adding-tests-to-test-plan), add tests to the created test plan and return here.
