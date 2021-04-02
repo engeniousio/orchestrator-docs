@@ -214,7 +214,7 @@ Cooming soon. You can read more about Enviroment variables [here](/env-vars).
 
 
   ```
-  orchestrator init --token "your_token"
+  sift orchestrator init --token "your_token"
   ```
   </TabItem>
 </Tabs>
