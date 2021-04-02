@@ -33,7 +33,7 @@ The new node must include [SSH key](/ssh) path and include at least one [device 
 
 - Name: This name will be displayed in the Orchestrator.
 - Host: Your SIFT machine is going to connect to this node via ssh. Please provide the IP address of the node. Use `127.0.0.1` to run sift on local machine.
-- Port: Your SIFT machine is going to connect to this node via ssh. Please provide the port. If you use local connections the default port will be `22`.
+- Port: Your SIFT machine is going to connect to this node via ssh. Please provide the port. When running sift on a local machine the port should be `22`.
 - Username: Name of your local machine.
 - Path to private key: Your SIFT machine is going to connect to this node via ssh. Please provide the absolute path on the SIFT machine to a valid ssh private key which will be used for establishing a connection. By default it's located in `/Users/user_name/.ssh/id_rsa` where user_name is your machine username.
 
@@ -61,13 +61,13 @@ Please do not provide the value of the private key itself - this information is 
   <TabItem value="android">
     <ul>
         <li>
-            Android Sdk Path: Where is Android Sdk located?
+            Android Sdk Path: Where is Android SDK located. This is the directory that contains `platform` and `platform-tools` subdirectories. Usually ANDROID_SDK_ROOT/ANDROID_HOME environment variable contains path of this directory.
         </li>
     </ul>
   </TabItem>
 </Tabs>
 
-### Enviroment variables
+### Enviroment variables and instrumentation arguments
 
 <Tabs
   groupId="platforms"
@@ -111,7 +111,7 @@ You can read more about Devices and Simulators [here](/udid).
     </ol>
   </TabItem>
   <TabItem value="android">
-    Devices - Device serials (you can get them with 'adb devices' command). Emulator serials can be used here if you prefer to manage them manually.
+    Devices - Device serials (you can get them with `adb devices` command). Emulator serials can be used here if you prefer to manage them manually.
     Simulators - Names of the emulators (AVD names) to automatically start/stop for a test run.
   </TabItem>
 </Tabs>
@@ -162,16 +162,16 @@ You can read more about Devices and Simulators [here](/udid).
             Timeout for Test: Sift will abort execution of a test case after this number of seconds.
         </li>
         <li>
-            Path to the application APK: SIFT uses test-without-build command so we need to locate .xctestrun file.
+            Path to the application APK: Path to an APK containing a debug build of your application under test (usually it is built with `./gradlew :app:assembleDebug` command). 
         </li>
         <li>
-            Path to the androidTest APK: Where would you like to see the results?
+            Path to the androidTest APK: Path to an APK that contains your tests (usually it is built with `./gradlew :app:assembleDebugAndroidTest` command)
         </li>
         <li>
-            Report Title: You can optionally add the script to execute before the test run.
+            Report Title: Title to use for a generated HTML report.
         </li>
         <li>
-            Report Subtitle: You can optionally add the script to execute after the test run.
+            Report Subtitle: Optional subtitle to use for a generated HTML report.
         </li>
     </ul>
   </TabItem>
@@ -210,9 +210,11 @@ Cooming soon. You can read more about Enviroment variables [here](/env-vars).
   ```
   </TabItem>
   <TabItem value="android">
+  In this case, sift executable is located at `/usr/local/bin/` directory and has name sift.
+
 
   ```
-  todo
+  orchestrator init --token "your_token"
   ```
   </TabItem>
 </Tabs>
