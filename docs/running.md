@@ -13,7 +13,7 @@ import TabItem from '@theme/TabItem';
 
 :::tip
 
-Test Orchestrator always will provide the default test-plan name with the name: default_ios_plan or default_android_plan
+Test Orchestrator will always provide the default test-plan name with the name: default_ios_plan or default_android_plan
 
 :::
 
@@ -38,7 +38,7 @@ Test Orchestrator always will provide the default test-plan name with the name: 
   Go to the Project folder and run:
 
   ```
-  sift orchestrator --token 'your token' --test-plan 'name of testplan' --status 'quarantined'
+  sift orchestrator run --token 'your token' --test-plan 'name of testplan' --status 'quarantined'
   ```
   </TabItem>
 </Tabs>
