@@ -32,10 +32,9 @@ This guide only for Mac and Linux.
   </TabItem>
   <TabItem value="android">
     <ul>
-      <li>Android SDK</li>
+      <li>Android SDK (platform tools and build tools should be at least 27.0.0, latest version is recommended)</li>
       <li>Java 8</li>
-      <li>Test APK should have androidTestImplementation 'com.github.TarCV.tongs:tongs-ondevice:0.5' dependency
-        (This dependency will be optional in the future)</li>
+      <li>Optional: Add androidTestImplementation 'com.github.TarCV.tongs:tongs-ondevice:0.5' dependency to test APK to support dynamic tests (ex. parameterized tests) and tests with non alphanumeric characters in their names</li>
     </ul>
   </TabItem>
 </Tabs>
@@ -81,6 +80,9 @@ This guide only for Mac and Linux.
   ```
 
   <img alt="Clone sift" src={useBaseUrl("gif/clone-sift-min.gif")} />  
+
+  5.&nbsp;Go to the created directory
+
   </TabItem>
 </Tabs>
 
@@ -89,7 +91,7 @@ This guide only for Mac and Linux.
 
 1. Open Terminal.
 
-2. Make sure that you are in the current working directory.
+2. Make sure that you are in the directory created during Install (step 5).
 
 3. Run build command:
 
@@ -118,7 +120,9 @@ This guide only for Mac and Linux.
   ```
   ./gradlew installDist
   ```  
-  Sift binaries will be created in `runner/build/install` directory
+  4.&nbsp;Your executable will be stored here: `runner/build/install/sift` directory
+
+  5.&nbsp;For easy access to Sift you can move generted Sift binaries into your ```/usr/local``` directory: you should put files from ```runner/build/install/sift/bin``` to your ```/usr/local/bin``` directory and files from ```runner/build/install/sift/lib``` to your ```/usr/local/lib``` directory.
   </TabItem>
 </Tabs>
 
