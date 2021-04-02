@@ -32,9 +32,9 @@ This guide only for Mac and Linux.
   </TabItem>
   <TabItem value="android">
     <ul>
-      <li>Android SDK (platform tools and build tools should be at least 27.0.0, latest version is recommended)</li>
+      <li>Android SDK (platform tools and build tools should be at least 27.0.0, the latest version is recommended)</li>
       <li>Java 8</li>
-      <li>Optional: Add androidTestImplementation 'com.github.TarCV.tongs:tongs-ondevice:0.5' dependency to test APK to support dynamic tests (ex. parameterized tests) and tests with non alphanumeric characters in their names</li>
+      <li>Optional: Add androidTestImplementation 'io.engenious.sift-android:ondevice:$VERSION' dependency to test APK to support dynamic tests (ex. parameterized tests) and tests with non alphanumeric characters in their names</li>
     </ul>
   </TabItem>
 </Tabs>
