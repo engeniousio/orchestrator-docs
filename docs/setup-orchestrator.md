@@ -177,7 +177,7 @@ You can read more about Devices and Simulators [here](/udid).
   </TabItem>
 </Tabs>
 
-- Output Directory Path: Where would you like to see the results?
+- Output Directory Path: Where would you like to see the results? Please, choose (create) a folder where you like to store the results.
 - Setup Script Path: You can optionally add the script to execute before the test run.
 - Tear Down Script Path: You can optionally add the script to execute after the test run.
 
@@ -219,7 +219,9 @@ Cooming soon. You can read more about Enviroment variables [here](/env-vars).
   </TabItem>
 </Tabs>
 
-3. Instead of "your_token" use [your token](/settings#copy-the-token) from Global Settings.
+3. Instead of "your_token" use [token](/settings#copy-the-token) from Global Settings.
+
+<img alt="Tell Orchestrator about your tests" src={useBaseUrl("img/sift-init-min.png")} />
 
 ## Create test plan
 
