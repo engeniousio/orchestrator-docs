@@ -64,15 +64,15 @@ Please do not provide the value of the private key itself - this information is 
   <TabItem value="ios">
     <ul>
         <li>
-          <strong>Xcode Path</strong>: Where is Xcode located? By default it's located in `/Applications/Xcode.app`.
+          <strong>Xcode Path</strong>: Where is Xcode located? By default it's located in <code>/Applications/Xcode.app</code>.
         </li>
     </ul>
   </TabItem>
   <TabItem value="android">
     <ul>
         <li>
-          <strong>Android Sdk Path</strong>: Where is Android SDK located. This is the directory that contains `platform` and `platform-tools` subdirectories. Usually ANDROID_SDK_ROOT/ANDROID_HOME environment variable contains path of this directory.
-          <p>Note: You can use an environment variable here. For example `$ANDROID_SDK_ROOT`</p>
+          <strong>Android Sdk Path</strong>: Where is Android SDK located. This is the directory that contains <code>platform</code> and <code>platform-tools</code> subdirectories. Usually ANDROID_SDK_ROOT/ANDROID_HOME environment variable contains path of this directory.
+          <p>Note: You can use an environment variable here. For example <code>$ANDROID_SDK_ROOT</code></p>
         </li>
     </ul>
   </TabItem>
@@ -126,7 +126,7 @@ You can read more about Devices and Simulators [here](/udid).
   <TabItem value="android">
     <ul>
       <li>
-        Devices - Device serials (you can get them with `$ANDROID_SDK_ROOT/platform-tools/adb devices` command). Emulator serials (like `emulator-5554`) can be used here if you prefer to manage emulators outside of Sift.
+        Devices - Device serials (you can get them with <code>$ANDROID_SDK_ROOT/platform-tools/adb devices</code> command). Emulator serials (like <code>emulator-5554</code>) can be used here if you prefer to manage emulators outside of Sift.
       </li>
       <li>
         Simulators - Names of the emulators (AVD names) to automatically start/stop for a test run.
@@ -182,10 +182,10 @@ You can read more about Devices and Simulators [here](/udid).
           <strong>Timeout for Test</strong>: Sift will abort execution of a test case after this number of seconds.
         </li>
         <li>
-            <strong>Path to the application APK</strong>: Path to an APK containing a debug build of your application under test (usually it is built with `./gradlew :app:assembleDebug` command, binaries are build in a directory like app/build/outputs/apk/debug). 
+            <strong>Path to the application APK</strong>: Path to an APK containing a debug build of your application under test (usually it is built with <code>./gradlew :app:assembleDebug</code> command, binaries are build in a directory like app/build/outputs/apk/debug). 
         </li>
         <li>
-            <strong>Path to the androidTest APK</strong>: Path to an APK that contains your tests (usually it is built with `./gradlew :app:assembleDebugAndroidTest` command,  binaries are build in a directory like app/build/outputs/apk/androidTest/debug)
+            <strong>Path to the androidTest APK</strong>: Path to an APK that contains your tests (usually it is built with <code>./gradlew :app:assembleDebugAndroidTest</code> command,  binaries are build in a directory like app/build/outputs/apk/androidTest/debug)
         </li>
         <li>
             <strong>Report Title</strong>: Title to use for a generated HTML report.
@@ -222,7 +222,7 @@ You can read more about Enviroment variables [here](/env-vars).
   ]}
 >
   <TabItem value="ios">
-  In this case, sift executable is located at `/usr/local/bin/` directory and has name sift.
+  In this case, sift executable is located at <code>/usr/local/bin/</code> directory and has name sift.
 
 
   ```
@@ -230,7 +230,7 @@ You can read more about Enviroment variables [here](/env-vars).
   ```
   </TabItem>
   <TabItem value="android">
-  If your sift executable is located at `/usr/local/bin/` use the following command:
+  If your sift executable is located at <code>/usr/local/bin/</code> use the following command:
 
   ```
   sift orchestrator init --token "your_token"
