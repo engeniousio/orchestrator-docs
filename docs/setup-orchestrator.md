@@ -51,7 +51,7 @@ You can use an environment variable(s) in **Name**, **Host**, **Username** and *
 Please do not provide the value of the private key itself - this information is private and you should not share it with us.
 :::
 
-- Deployment Path: Sift will temporarily store the build & results here.
+- **Deployment Path**: Sift will temporarily store the build & results here.
 
 <Tabs
   groupId="platforms"
@@ -64,17 +64,15 @@ Please do not provide the value of the private key itself - this information is 
   <TabItem value="ios">
     <ul>
         <li>
-            Xcode Path: Where is Xcode located? By default it's located in `/Applications/Xcode.app`.
+          <strong>Xcode Path</strong>: Where is Xcode located? By default it's located in `/Applications/Xcode.app`.
         </li>
     </ul>
   </TabItem>
   <TabItem value="android">
     <ul>
         <li>
-            **Android Sdk Path**: Where is Android SDK located. This is the directory that contains `platform` and `platform-tools` subdirectories. Usually ANDROID_SDK_ROOT/ANDROID_HOME environment variable contains path of this directory.
-          :::note
-          You can use an environment variable here. For example `$ANDROID_SDK_ROOT`
-          :::
+          <strong>Android Sdk Path</strong>: Where is Android SDK located. This is the directory that contains `platform` and `platform-tools` subdirectories. Usually ANDROID_SDK_ROOT/ANDROID_HOME environment variable contains path of this directory.
+          <p>Note: You can use an environment variable here. For example `$ANDROID_SDK_ROOT`</p>
         </li>
     </ul>
   </TabItem>
@@ -91,16 +89,12 @@ Please do not provide the value of the private key itself - this information is 
   ]}
 >
   <TabItem value="ios">
-    Enviroment variables - Optional. This variables will be injected into your .xctestrun and can be used from test environment. You can read more about Enviroment variables <a target="_blank" href="/env-vars">here</a>.
+    <strong>Enviroment variables</strong> - Optional. This variables will be injected into your .xctestrun and can be used from test environment. You can read more about Enviroment variables <a target="_blank" href="/env-vars">here</a>.
   </TabItem>
   <TabItem value="android">
-    - **Instrumentation arguments** - Optional. These are additional arguments passed to the  instrumentation test runner (usually AndroidJUnitRunner). They can be used to pass credentials or environment settings (such as backend base URL) to tests executing on your devices.
-    :::note
-    You can use an environment variable in instrumentation argument values. This is useful to provide some parameters from your CI (for example to provide credentials and avoid storing them in Orchestrator)
-    :::
-    :::note
-    You can use instrumentation arguments to provide AndroidJUnitRunner parameters like **package**, **notAnnotations**. When based on these parameters AndroidJUnitRunner excludes tests enabled in Orchestrator, they will be shown as skipped in the final report.
-    :::
+    <p><strong>Instrumentation arguments</strong> - Optional. These are additional arguments passed to the  instrumentation test runner (usually AndroidJUnitRunner). They can be used to pass credentials or environment settings (such as backend base URL) to tests executing on your devices.</p>
+    <p>Note: You can use an environment variable in instrumentation argument values. This is useful to provide some parameters from your CI (for example to provide credentials and avoid storing them in Orchestrator).</p>
+    <p>Note: You can use instrumentation arguments to provide AndroidJUnitRunner parameters like <strong>package</strong>, <strong>notAnnotations</strong>. When based on these parameters AndroidJUnitRunner excludes tests enabled in Orchestrator, they will be shown as skipped in the final report.</p>
   </TabItem>
 </Tabs>
 
@@ -118,20 +112,26 @@ You can read more about Devices and Simulators [here](/udid).
 >
   <TabItem value="ios">
     <ol>
-        <li>
-            You can get simulator id by going to Xcode -> Window -> Devices and Simulators;
-        </li>
-        <li>
-            Right click on device or simulator in list -> Copy Identifier;
-        </li>
-        <li>
-            Сlick <strong>Add Device</strong> or <strong>Add Simulator</strong> and paste id.
-        </li>
+      <li>
+        You can get simulator id by going to Xcode -> Window -> Devices and Simulators;
+      </li>
+      <li>
+        Right click on device or simulator in list -> Copy Identifier;
+      </li>
+      <li>
+        Сlick <strong>Add Device</strong> or <strong>Add Simulator</strong> and paste id.
+      </li>
     </ol>
   </TabItem>
   <TabItem value="android">
-    - Devices - Device serials (you can get them with `$ANDROID_SDK_ROOT/platform-tools/adb devices` command). Emulator serials (like `emulator-5554`) can be used here if you prefer to manage emulators outside of Sift.
-    - Simulators - Names of the emulators (AVD names) to automatically start/stop for a test run.
+    <ul>
+      <li>
+        Devices - Device serials (you can get them with `$ANDROID_SDK_ROOT/platform-tools/adb devices` command). Emulator serials (like `emulator-5554`) can be used here if you prefer to manage emulators outside of Sift.
+      </li>
+      <li>
+        Simulators - Names of the emulators (AVD names) to automatically start/stop for a test run.
+      </li>
+    </ul>
   </TabItem>
 </Tabs>
 
@@ -156,44 +156,42 @@ You can read more about Devices and Simulators [here](/udid).
   <TabItem value="ios">
     <ul>
         <li>
-            Number or Reruns: How many reruns are allowed?
+            <strong>Number or Reruns</strong>: How many reruns are allowed?
         </li>
         <li>
-            Tests Per Device: How many tests are allowed per one device / simulator?
+            <strong>Tests Per Device</strong>: How many tests are allowed per one device / simulator?
         </li>
         <li>
-            Timeout for Test: SIFT will abort the execution after this number of seconds.
+            <strong>Timeout for Test</strong>: SIFT will abort the execution after this number of seconds.
         </li>
         <li>
-            XCTestrun Path: SIFT uses test-without-build command so we need to locate .xctestrun file.
+            <strong>XCTestrun Path</strong>: SIFT uses test-without-build command so we need to locate .xctestrun file.
         </li>
     </ul>
   </TabItem>
   <TabItem value="android">
-  :::note
-  You can use environment variables in text and path configuration fields.
-  :::
+    <h5>Note: You can use environment variables in text and path configuration fields.</h5>
     <ul>
         <li>
-            **Max retries per case**: How many reruns are allowed?
+          <strong>Max retries per case</strong>: How many reruns are allowed?
         </li>
         <li>
-            **Max retries per run**: How many retries per one test run are allowed?
+          <strong>Max retries per run</strong>: How many retries per one test run are allowed?
         </li>
         <li>
-            **Timeout for Test**: Sift will abort execution of a test case after this number of seconds.
+          <strong>Timeout for Test</strong>: Sift will abort execution of a test case after this number of seconds.
         </li>
         <li>
-            **Path to the application APK**: Path to an APK containing a debug build of your application under test (usually it is built with `./gradlew :app:assembleDebug` command, binaries are build in a directory like app/build/outputs/apk/debug). 
+            <strong>Path to the application APK</strong>: Path to an APK containing a debug build of your application under test (usually it is built with `./gradlew :app:assembleDebug` command, binaries are build in a directory like app/build/outputs/apk/debug). 
         </li>
         <li>
-            **Path to the androidTest APK**: Path to an APK that contains your tests (usually it is built with `./gradlew :app:assembleDebugAndroidTest` command,  binaries are build in a directory like app/build/outputs/apk/androidTest/debug)
+            <strong>Path to the androidTest APK</strong>: Path to an APK that contains your tests (usually it is built with `./gradlew :app:assembleDebugAndroidTest` command,  binaries are build in a directory like app/build/outputs/apk/androidTest/debug)
         </li>
         <li>
-            **Report Title**: Title to use for a generated HTML report.
+            <strong>Report Title</strong>: Title to use for a generated HTML report.
         </li>
         <li>
-            **Report Subtitle**: Optional subtitle to use for a generated HTML report.
+            <strong>Report Subtitle</strong>: Optional subtitle to use for a generated HTML report.
         </li>
     </ul>
   </TabItem>
