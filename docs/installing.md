@@ -35,6 +35,7 @@ This guide only for Mac and Linux.
       <li>Android SDK (platform tools and build tools should be at least 27.0.0, the latest version is recommended)</li>
       <li>Java 8</li>
       <li>Optional: Add androidTestImplementation 'io.engenious.sift-android:ondevice:$VERSION' dependency to test APK to support dynamic tests (ex. parameterized tests) and tests with non alphanumeric characters in their names</li>
+      <li>Your instrumentation tests can be executed with Android Studio or `connectedCheck`/`connectedAndroidTest` Gradle tasks</li>
     </ul>
   </TabItem>
 </Tabs>
@@ -43,11 +44,11 @@ This guide only for Mac and Linux.
 
 1. Open Terminal.
 
-2. Change the current working directory to the location where you want to store cloned SIFT repository.
+2. Change the current working directory to the location where you want to store cloned SIFT repository. You can use `cd` command to change directory if needed.
 
-3. Copy the URL of SIFT from github.
+3. Copy the code clone link of Sift for your platform from GitHub. Actual links to GitHub project are in the toolbar above.
 
-4. Use git clone command with URL to create your local copy.
+4. Use git clone command with the link to create your local copy.
 
 <Tabs
   groupId="platforms"
@@ -112,7 +113,7 @@ This guide only for Mac and Linux.
 
   4.&nbsp;Your executable will be stored here: ```.../sift/.build/x86_64-apple-macosx/release/Sift```.
 
-  5.&nbsp;For easy access to Sift you can move generted Sift executable into your ```/usr/local/bin``` folder. After that sift will be accessible directly from terminal from any location.
+  5.&nbsp;For easy access to Sift you can move generated Sift executable into your ```/usr/local/bin``` folder. After that sift will be accessible directly from terminal from any location.
 
   </TabItem>
   <TabItem value="android">
@@ -120,7 +121,7 @@ This guide only for Mac and Linux.
   ```
   ./gradlew installDist
   ```  
-  4.&nbsp;Your executable will be stored here: `runner/build/install/sift` directory
+  4.&nbsp;Your executable will be stored in `runner/build/install/sift` directory
 
   5.&nbsp;For easy access to Sift you can move generted Sift binaries into your ```/usr/local``` directory: you should put files from ```runner/build/install/sift/bin``` to your ```/usr/local/bin``` directory and files from ```runner/build/install/sift/lib``` to your ```/usr/local/lib``` directory.
   </TabItem>

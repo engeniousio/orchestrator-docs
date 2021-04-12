@@ -9,6 +9,10 @@ import TabItem from '@theme/TabItem';
 
 ## Set up your SSH
 
+:::note
+You can use Sift without setting up SSH connections and instead use devices connected to the same host (or emulators/simulators set up on the host) where Sift is executed. In that case skip to **Create a new node** section.
+:::
+
 If you can connect to your node (or local machine) via ssh without password, then connection set up is right:
 
 [try out your login](/ssh#step-3-try-out-your-login) and continue set up Orchestrator.
@@ -19,10 +23,14 @@ go to the [set up SSH key](/ssh) guide and do all steps to create a new key and 
 
 ## Create a new node
 
+A node is a host that have real devices connected to it (or emulator/simulators set up).
+
 :::warning
-
 The new node must include [SSH key](/ssh) path and include at least one [device or simulator](/udid).
+:::
 
+:::note
+You can use paths relative to Sift working directory and environment variables when specifying paths in your configuration.
 :::
 
 1. Go to the Sift Nodes page.
@@ -30,18 +38,20 @@ The new node must include [SSH key](/ssh) path and include at least one [device 
 2. Click **Add Node** button.
 
 3. Fill out all fields in the form.
-
-- Name: This name will be displayed in the Orchestrator.
-- Host: Your SIFT machine is going to connect to this node via ssh. Please provide the IP address of the node. Use `127.0.0.1` to run sift on local machine.
-- Port: Your SIFT machine is going to connect to this node via ssh. Please provide the port. When running sift on a local machine the port should be `22`.
-- Username: Name of your local machine.
-- Path to private key: Your SIFT machine is going to connect to this node via ssh. Please provide the absolute path on the SIFT machine to a valid ssh private key which will be used for establishing a connection. By default it's located in `/Users/user_name/.ssh/id_rsa` where user_name is your machine username.
+:::note
+You can use an environment variable(s) in **Name**, **Host**, **Username** and **Path to private key** fields.
+:::
+- **Name**: This name will be displayed in the Orchestrator.
+- **Host**: Your SIFT machine is going to connect to this node via ssh. Please provide the IP address of the node. Use `127.0.0.1` to use devices connected to the same host (or emulators/simulators set up on the host) where Sift is executed.
+- **Port**: Your SIFT machine is going to connect to this node via ssh. Please provide the port. Use `22` to use devices connected to the same host (or emulators/simulators set up on the host) where Sift is executed.
+- **Username**: Name of your local machine. You can use any text when using devices connected to the same host (or emulators/simulators set up on the host) where Sift is executed.
+- **Path to private key**: Your SIFT machine is going to connect to this node via ssh. Please provide the absolute path on the SIFT machine to a valid ssh private key which will be used for establishing a connection. By default it's located in `/Users/user_name/.ssh/id_rsa` where user_name is your machine username. You can use any path (even non existing) when using devices connected to the same host (or emulators/simulators set up on the host) where Sift is executed.
 
 :::note
 Please do not provide the value of the private key itself - this information is private and you should not share it with us.
 :::
 
-- Deployment Path: We will temporarily store the build & results here.
+- Deployment Path: Sift will temporarily store the build & results here.
 
 <Tabs
   groupId="platforms"
@@ -61,7 +71,10 @@ Please do not provide the value of the private key itself - this information is 
   <TabItem value="android">
     <ul>
         <li>
-            Android Sdk Path: Where is Android SDK located. This is the directory that contains `platform` and `platform-tools` subdirectories. Usually ANDROID_SDK_ROOT/ANDROID_HOME environment variable contains path of this directory.
+            **Android Sdk Path**: Where is Android SDK located. This is the directory that contains `platform` and `platform-tools` subdirectories. Usually ANDROID_SDK_ROOT/ANDROID_HOME environment variable contains path of this directory.
+          :::note
+          You can use an environment variable here. For example `$ANDROID_SDK_ROOT`
+          :::
         </li>
     </ul>
   </TabItem>
@@ -81,7 +94,13 @@ Please do not provide the value of the private key itself - this information is 
     Enviroment variables - Optional. This variables will be injected into your .xctestrun and can be used from test environment. You can read more about Enviroment variables <a target="_blank" href="/env-vars">here</a>.
   </TabItem>
   <TabItem value="android">
-    Instrumentation arguments - Optional. These are additional arguments passed to the  instrumentation test runner (usually AndroidJUnitRunner). They can be used to pass credentials or environment settings (such as backend base URL) to tests executing on your devices.
+    - **Instrumentation arguments** - Optional. These are additional arguments passed to the  instrumentation test runner (usually AndroidJUnitRunner). They can be used to pass credentials or environment settings (such as backend base URL) to tests executing on your devices.
+    :::note
+    You can use an environment variable in instrumentation argument values. This is useful to provide some parameters from your CI (for example to provide credentials and avoid storing them in Orchestrator)
+    :::
+    :::note
+    You can use instrumentation arguments to provide AndroidJUnitRunner parameters like **package**, **notAnnotations**. When based on these parameters AndroidJUnitRunner excludes tests enabled in Orchestrator, they will be shown as skipped in the final report.
+    :::
   </TabItem>
 </Tabs>
 
@@ -111,18 +130,18 @@ You can read more about Devices and Simulators [here](/udid).
     </ol>
   </TabItem>
   <TabItem value="android">
-    Devices - Device serials (you can get them with `adb devices` command). Emulator serials can be used here if you prefer to manage them manually.
-    Simulators - Names of the emulators (AVD names) to automatically start/stop for a test run.
+    - Devices - Device serials (you can get them with `$ANDROID_SDK_ROOT/platform-tools/adb devices` command). Emulator serials (like `emulator-5554`) can be used here if you prefer to manage emulators outside of Sift.
+    - Simulators - Names of the emulators (AVD names) to automatically start/stop for a test run.
   </TabItem>
 </Tabs>
 
-4. Save all changes by click **Create** button.
+4. Save all changes by clicking **Create** button.
 
 <img alt="creating a new node" src={useBaseUrl("gif/creating-node-min.gif")} />
 
 ## Set up global settings
 
-1. Go to the Global Settings page.
+1. Go to the **Global Settings** page.
 
 2. Fill out all fields in the form.
 
@@ -151,41 +170,44 @@ You can read more about Devices and Simulators [here](/udid).
     </ul>
   </TabItem>
   <TabItem value="android">
+  :::note
+  You can use environment variables in text and path configuration fields.
+  :::
     <ul>
         <li>
-            Max retries per case: How many reruns are allowed?
+            **Max retries per case**: How many reruns are allowed?
         </li>
         <li>
-            Max retries per run: How many retries per one test run are allowed?
+            **Max retries per run**: How many retries per one test run are allowed?
         </li>
         <li>
-            Timeout for Test: Sift will abort execution of a test case after this number of seconds.
+            **Timeout for Test**: Sift will abort execution of a test case after this number of seconds.
         </li>
         <li>
-            Path to the application APK: Path to an APK containing a debug build of your application under test (usually it is built with `./gradlew :app:assembleDebug` command). 
+            **Path to the application APK**: Path to an APK containing a debug build of your application under test (usually it is built with `./gradlew :app:assembleDebug` command, binaries are build in a directory like app/build/outputs/apk/debug). 
         </li>
         <li>
-            Path to the androidTest APK: Path to an APK that contains your tests (usually it is built with `./gradlew :app:assembleDebugAndroidTest` command)
+            **Path to the androidTest APK**: Path to an APK that contains your tests (usually it is built with `./gradlew :app:assembleDebugAndroidTest` command,  binaries are build in a directory like app/build/outputs/apk/androidTest/debug)
         </li>
         <li>
-            Report Title: Title to use for a generated HTML report.
+            **Report Title**: Title to use for a generated HTML report.
         </li>
         <li>
-            Report Subtitle: Optional subtitle to use for a generated HTML report.
+            **Report Subtitle**: Optional subtitle to use for a generated HTML report.
         </li>
     </ul>
   </TabItem>
 </Tabs>
 
-- Output Directory Path: Where would you like to see the results? Please, choose (create) a folder where you like to store the results.
-- Setup Script Path: You can optionally add the script to execute before the test run.
-- Tear Down Script Path: You can optionally add the script to execute after the test run.
+- **Output Directory Path**: Where would you like to see the results? Please, choose a directory where you like to store the results. The directory will be created automatically if it doesn't exist.
+- **Setup Script Path**: You can optionally add the script to execute before the test run.
+- **Tear Down Script Path**: You can optionally add the script to execute after the test run.
 
-### Enviroment variables
+### Enviroment variables/Instrumentation arguments
 
-Cooming soon. You can read more about Enviroment variables [here](/env-vars).
+You can read more about Enviroment variables [here](/env-vars).
 
-3. Save all changes by click **Update** button.
+3. Save all changes by clicking **Update** button.
 
 ## Tell Orchestrator about your tests
 
@@ -210,11 +232,16 @@ Cooming soon. You can read more about Enviroment variables [here](/env-vars).
   ```
   </TabItem>
   <TabItem value="android">
-  In this case, sift executable is located at `/usr/local/bin/` directory and has name sift.
-
+  If your sift executable is located at `/usr/local/bin/` use the following command:
 
   ```
   sift orchestrator init --token "your_token"
+  ```
+
+  To run Sift from the current directory use the following command:
+
+  ```
+  ./sift orchestrator init --token "your_token"
   ```
   </TabItem>
 </Tabs>
