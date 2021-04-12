@@ -7,13 +7,13 @@ import Tabs from '@theme/Tabs';
 
 import TabItem from '@theme/TabItem';
 
-1. Copy the [organization token](/settings/#token) from the dashboard, see the page "Global settings" (read more about [Global Settings](/settings/)).
+1. Copy your [organization token](/settings/#token) from the dashboard, see the page "Global settings" (read more about [Global Settings](/settings/)).
 
-2. In the terminal paste token and test plan name.
+2. In the terminal paste the token and the test plan name (read more about [test plans](/test-plans/)).
 
 :::tip
 
-Test Orchestrator will always provide the default test-plan name with the name: default_ios_plan or default_android_plan
+Test Orchestrator will always provide default test-plans with names: default_ios_plan (for iOS platform) and default_android_plan (for Android platform)
 
 :::
 
@@ -43,7 +43,7 @@ Test Orchestrator will always provide the default test-plan name with the name: 
   </TabItem>
 </Tabs>
 
-More about [configuration SIFT](/configuration).
+Read more about [Sift configuration](/configuration).
 
 export const Highlight = ({children, color}) => ( <span style={{
       backgroundColor: color,
