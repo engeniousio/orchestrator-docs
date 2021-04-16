@@ -29,6 +29,14 @@ Test Plan can be managed by admin and lead. See more about [roles](/users/#roles
 
 :::
 
+4. Click **See details**, then open **Plan Settings** and make sure that at least one node is enabled.
+
+:::important
+
+When creating a new test plan make sure that at least one node is enabled on **Plan Settings** page. It's not possible to run tests without enabled nodes.
+
+:::
+
 ## Test Plan Details
 
 Click **See details** button for the certain test plan.
