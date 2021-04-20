@@ -250,8 +250,14 @@ You can read more about Enviroment variables [here](/env-vars).
 
 ## Create test plan
 
+:::warning 
+
+When creating a new test plan make sure that at least one node is enabled on [**Test Plan Settings**](/test-plan-settings) page. It's not possible to run tests without enabled nodes.
+
+:::
+
 Go to the [guide](/test-plans#creating), create a new test plan and return here.
 
 ## Add tests to test plan
 
-Go to the [guide](/test-plans#adding-tests-to-test-plan), add tests to the created test plan and return here.
+Go to the [guide](/test-plans#adding-tests-to-test-plan), add tests to the created test plan and go to the next step: [Running Sift with Orchestrator](/running).

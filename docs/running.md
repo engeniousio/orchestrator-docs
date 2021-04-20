@@ -30,7 +30,7 @@ Test Orchestrator will always provide default test-plans with names: default_ios
   <TabItem value="ios">
 
   ```
-  sift orchestrator --token 'your token' --test-plan 'name of testplan'
+  sift orchestrator --token 'your token' --test-plan 'name of testplan' --status 'quarantined'
   ```
   </TabItem>
   <TabItem value="android">
@@ -42,8 +42,6 @@ Test Orchestrator will always provide default test-plans with names: default_ios
   ```
   </TabItem>
 </Tabs>
-
-Read more about [Sift configuration](/configuration).
 
 export const Highlight = ({children, color}) => ( <span style={{
       backgroundColor: color,
