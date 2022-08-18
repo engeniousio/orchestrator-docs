@@ -222,11 +222,12 @@ You can read more about Enviroment variables [here](/env-vars).
   ]}
 >
   <TabItem value="ios">
+  Init Sift from master branch.  
   In this case, sift executable is located at <code>/usr/local/bin/</code> directory and has name sift.
 
 
   ```
-  sift orchestrator --token "your_token" --init
+  sift orchestrator --token "your_token" --init --endpoint https://api.orchestrator.engenious.io --verbose
   ```
   </TabItem>
   <TabItem value="android">
@@ -239,7 +240,7 @@ You can read more about Enviroment variables [here](/env-vars).
   To run Sift from the current directory use the following command:
 
   ```
-  ./sift orchestrator init --token "your_token"
+  ./sift orchestrator init --token "your_token" 
   ```
   </TabItem>
 </Tabs>
