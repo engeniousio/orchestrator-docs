@@ -30,7 +30,7 @@ Test Orchestrator will always provide default test-plans with names: default_ios
   <TabItem value="ios">
 
   ```
-  sift orchestrator --token 'your token' --test-plan 'name of testplan' --status 'quarantined'
+  sift orchestrator --token 'your token' --test-plan 'name of testplan' 
   ```
   </TabItem>
   <TabItem value="android">
