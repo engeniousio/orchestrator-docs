@@ -9,11 +9,11 @@ import TabItem from '@theme/TabItem';
 
 1. Copy your [organization token](/settings/#token) from the dashboard, see the page "Global settings" (read more about [Global Settings](/settings/)).
 
-2. In the terminal paste the token and the test plan name (read more about [test plans](/test-plans/)).
+2. In the terminal paste the token and the test suite name (read more about [test suites](/test-plans/)).
 
 :::tip
 
-Test Orchestrator will always provide default test-plans with names: default_ios_plan (for iOS platform) and default_android_plan (for Android platform)
+Test Orchestrator will always provide default test suites with names: default_ios_plan (for iOS platform) and default_android_plan (for Android platform)
 
 :::
 
