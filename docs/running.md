@@ -30,7 +30,9 @@ Test Orchestrator will always provide default test-plans with names: default_ios
   <TabItem value="ios">
 
   ```
-  sift orchestrator --token 'your token' --test-plan 'name of testplan' 
+
+  ./Sift orchestrator --token 'your token' --endpoint "https://api.orchestrator.engenious.io" --test-plan 'name of testplan'
+
   ```
   </TabItem>
   <TabItem value="android">
