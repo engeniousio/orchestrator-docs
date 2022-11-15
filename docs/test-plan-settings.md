@@ -1,6 +1,6 @@
 ---
 id: test-plan-settings
-title: Test Plan Settings
+title: Test Suite Settings
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -9,7 +9,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 See all [configuration](/configuration) options for SIFT.
 
-1. Go to a certain Test Plan page.
+1. Go to a certain Test Suite page.
 
 2. Make changes.
 
@@ -21,7 +21,7 @@ See all [configuration](/configuration) options for SIFT.
 
 You can reset all settings include [environment variables](/env-vars), [nodes](/nodes) to [global settings](/settings).
 
-1. Go to a certain Test Plan page.
+1. Go to a certain Test Suite page.
 
 2. Click **Settings** button.
 
@@ -29,7 +29,7 @@ You can reset all settings include [environment variables](/env-vars), [nodes](/
 
 :::important
 
-After reset the [Test Plan Settings](/test-plan-settings) it will duplicate [Global Settings](/settings).
+After reset the [Test Suite Settings](/test-plan-settings) it will duplicate [Global Settings](/settings).
 
 :::
 
@@ -37,9 +37,9 @@ After reset the [Test Plan Settings](/test-plan-settings) it will duplicate [Glo
 
 ## Toggle node status
 
-You can enable or disable a certain [node](/nodes) for [Test Plan](/test-plans#test-plan-settings).
+You can enable or disable a certain [node](/nodes) for [Test Suite](/test-plans#test-plan-settings).
 
-1. Go to a certain Test Plan page.
+1. Go to a certain Test Suite page.
 
 2. Click **Settings** button.
 
@@ -55,7 +55,7 @@ Called Instrumentation Argument for Android [Platform](/platforms).
 
 More about [Enviroment Variables](/env-vars).
 
-1. Go to a certain Test Plan page.
+1. Go to a certain Test Suite page.
 
 2. Click **Add variable** in the Environment Variables section.
 
@@ -69,7 +69,7 @@ More about [Enviroment Variables](/env-vars).
 
 ## Deleting Environment Variable
 
-1. Go to a certain Test Plan page.
+1. Go to a certain Test Suite page.
 
 2. Click the red trash button nearly the certain environment variable.
 
