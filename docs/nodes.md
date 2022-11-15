@@ -27,7 +27,7 @@ The new node must include [SSH key](/ssh) path and include at least one [device 
 
 ## Modifying node
 
-1. Go to the [Sift Nodes](/nodes) page or [Test Plan Settings](/test-plan-settings).
+1. Go to the [Sift Nodes](/nodes) page or [Test Suite Settings](/test-plan-settings).
 
 2. Click pencil icon for a certain node.
 
