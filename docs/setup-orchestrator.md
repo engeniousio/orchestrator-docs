@@ -23,7 +23,7 @@ go to the [set up SSH key](/ssh) guide and do all steps to create a new key and 
 
 ## Create a new node
 
-A node is a host that have real devices connected to it (or emulator/simulators set up).
+A node is a host that has real devices connected to it (or emulator/simulators set up).
 
 :::warning
 The new node must include [SSH key](/ssh) path and include at least one [device or simulator](/udid).
@@ -33,7 +33,7 @@ The new node must include [SSH key](/ssh) path and include at least one [device 
 You can use paths relative to Sift working directory and environment variables when specifying paths in your configuration.
 :::
 
-1. Go to the Sift Nodes page.
+1. Go to the Nodes page.
 
 2. Click **Add Node** button.
 
@@ -41,17 +41,19 @@ You can use paths relative to Sift working directory and environment variables w
 :::note
 You can use an environment variable(s) in **Name**, **Host**, **Username** and **Path to private key** fields.
 :::
+### General
 - **Name**: This name will be displayed in the Orchestrator.
 - **Host**: Your SIFT machine is going to connect to this node via ssh. Please provide the IP address of the node. Use `127.0.0.1` to use devices connected to the same host (or emulators/simulators set up on the host) where Sift is executed.
 - **Port**: Your SIFT machine is going to connect to this node via ssh. Please provide the port. Use `22` to use devices connected to the same host (or emulators/simulators set up on the host) where Sift is executed.
+- **Deployment Path**: Sift will temporarily store the build & results here.
+
+### Authorization
 - **Username**: Name of your local machine. You can use any text when using devices connected to the same host (or emulators/simulators set up on the host) where Sift is executed.
 - **Path to private key**: Your SIFT machine is going to connect to this node via ssh. Please provide the absolute path on the SIFT machine to a valid ssh private key which will be used for establishing a connection. By default it's located in `/Users/user_name/.ssh/id_rsa` where user_name is your machine username. You can use any path (even non existing) when using devices connected to the same host (or emulators/simulators set up on the host) where Sift is executed.
 
 :::note
 Please do not provide the value of the private key itself - this information is private and you should not share it with us.
 :::
-
-- **Deployment Path**: Sift will temporarily store the build & results here.
 
 <Tabs
   groupId="platforms"
@@ -249,16 +251,16 @@ You can read more about Enviroment variables [here](/env-vars).
 
 <img alt="Tell Orchestrator about your tests" src={useBaseUrl("img/sift-init-min.png")} />
 
-## Create test plan
+## Create test suite
 
 :::warning 
 
-When creating a new test plan make sure that at least one node is enabled on [**Test Plan Settings**](/test-plan-settings) page. It's not possible to run tests without enabled nodes.
+When creating a new test suite make sure that at least one node is enabled on [**Test Suite Settings**](/test-plan-settings) page. It's not possible to run test cases without enabled nodes.
 
 :::
 
-Go to the [guide](/test-plans#creating), create a new test plan and return here.
+Go to the [guide](/test-plans#creating), create a new test suite and return here.
 
-## Add tests to test plan
+## Add test cases to test suite
 
 Go to the [guide](/test-plans#adding-tests-to-test-plan), add tests to the created test plan and go to the next step: [Running Sift with Orchestrator](/running).
