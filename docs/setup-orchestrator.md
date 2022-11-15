@@ -227,7 +227,7 @@ You can read more about Enviroment variables [here](/env-vars).
 
 
   ```
-  sift orchestrator --token "your_token" --init --endpoint https://api.orchestrator.engenious.io --verbose
+  ./Sift orchestrator --token "your_token" --endpoint "https://api.orchestrator.engenious.io" --test-plan "your_test_plan" --init
   ```
   </TabItem>
   <TabItem value="android">
