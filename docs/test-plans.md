@@ -1,90 +1,90 @@
 ---
 id: test-plans
-title: Test Plans
+title: Test Suites
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
-Test plans comprise a list of [tests](/tests) and settings which you can set up and help you see the general [status](/test-status), scope of the test activity.
+Test suites comprise a list of [test cases](/tests) and settings which you can set up and help you see the general [status](/test-status), scope of the test activity.
 
 ## Creating
 
-1. Go to Test Plans page.
+1. Go to Test Suites page.
 
-2. Click **Create Test Plan** button and fill out the name field.
+2. Click **Create Test Suite** button and fill out the name field.
 
 :::important
 
-Use only a unique name for creating a test plan!
+Use only a unique name for creating a test suite!
 
 :::
 
-3. The created test plan will immediately appear on the Test Plans page and will be managed.
+3. The created test suite will immediately appear on the Test Suites page and will be managed.
 
 <img alt="creating test plan" src={useBaseUrl("gif/creating-test-plan-min.gif")} />
 
 :::note
 
-Test Plan can be managed by admin and lead. See more about [roles](/users/#roles).
+Test Suite can be managed by admin and lead. See more about [roles](/users/#roles).
 
 :::
 
-## Test Plan Details
+## Test Suite Details
 
-Click **See details** button for the certain test plan.
+Click **See details** button for the certain test suite.
 
-You will see all information about this test plan like name, [tests list](/tests), [settings](/test-plan-settings), and [tests flakiness report](/flaky-tests-report).
+You will see all information about this test suite like name, [test cases list](/tests), [settings](/test-plan-settings), and [tests flakiness report](/flaky-tests-report).
 
-## Adding Tests to Test Plan
+## Adding Tests to Test Suite
 
-1. Go to a certain Test Plan page.
+1. Go to a certain Test Suite page.
 
-2. Click **Add Tests** button.
+2. Click **Add Test Cases** button.
 
-3. On the [Tests](/tests) page select tests that you want to add to the Test Plan.
+3. On the [Test Cases](/tests) page select test cases that you want to add to the Test Suite.
 
-4. Click **Add To Test Plan** button then select a certain Test Plan and confirm the action.
+4. Click **Add To Test Suite** button then select a certain Test Suite and confirm the action.
 
 <img alt="adding tests" src={useBaseUrl("gif/adding-tests-from-plan-min.gif")} />
 
 :::note
 
-Adding duplicate [tests](/tests) will be ignored.
+Adding duplicate [test cases](/tests) will be ignored.
 
 :::
 
-5. Tests will add to the Test Plan. Comeback and manage it.
+5. Test cases will be added to the Test Suite. Comeback and manage it.
 
-## Deleting Tests from Test Plan
+## Deleting Test Cases from Test Suite
 
-1. Go to certain Test Plan page.
+1. Go to certain Test Suite page.
 
-2. Select tests that you want to delete.
+2. Select test cases that you want to delete.
 
-3. Click **Delete tests** button and confirm the action.
+3. Click **Delete test cases** button and confirm the action.
 
 <img alt="deleting tests from Test Plan" src={useBaseUrl("gif/deleting-tests-from-plan-min.gif")} />
 
-## Test Plan Settings
+## Test Suite Settings
 
-1. Go to a certain Test Plan page.
+1. Go to a certain Test Suite page.
 
-2. Click **Plan Settings** button.
+2. Click **Suite Settings** button.
 
-3. You will see all Settings for the certain test plan.
+3. You will see all Settings for the certain test suite.
 
 :::note
 
-[Test Plan Settings](/test-plan-settings) can be managed only by admin. See more about [roles](/users/#roles).
+[Test Suite Settings](/test-plan-settings) can be managed only by admin. See more about [roles](/users/#roles).
 
 :::
 
-## Deleting Test Plan
+## Deleting Test Suite
 
-1. Go to a certain Test Plan page.
+1. Go to a certain Test Suite page.
 
-2. Click **Delete Plan** button at the header then confirm the action.
+2. Click **Delete Suite** button at the header then confirm the action.
 
-3. Test Plan will delete and you will redirect to the [Test Plans](/test-plans#introduction) page.
+3. Test Suite will be deleted and you will be redirected to the [Test Suites](/test-plans#introduction) page.
 
 <img alt="deleting test plan" src={useBaseUrl("gif/deleting-test-plan-min.gif")} />
