@@ -7,7 +7,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 ## Invite users (admin only)
 
-You can invite users to Test Orchestrator. Invited users will see all test plans and tests run for the organization.
+You can invite users to Test Orchestrator. Invited users will see all test suites and test cases run for the organization.
 
 1. Go the Users page.
 
