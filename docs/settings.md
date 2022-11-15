@@ -5,17 +5,17 @@ title: Global Settings
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
-[Global Settings](/settings) provide you all opportunities for setup [SIFT configuration](/configuration) and run it for each [Test Plan](/test-plans).
+[Global Settings](/settings) provide you all opportunities for setup [SIFT configuration](/configuration) and run it for each [Test Suite](/test-plans).
 
 :::tip
 
-If you want to customize [SIFT](/sift) config for the certain [Test Plan](/test-plans), use [Test Plan Settings](/test-plan-settings).
+If you want to customize [SIFT](/sift) config for the certain [Test Suite](/test-plans), use [Test Suite Settings](/test-plan-settings).
 
 :::
 
 ## Token
 
-Use organization token for run [SIFT](/sift). The token will generate automatically after created an organization.
+Use organization token for run [SIFT](/sift). The token will be generated automatically after the creation of an organization.
 Test Orchestrator provides separate tokens for each [platform](/platforms).
 
 ## Copy the token
