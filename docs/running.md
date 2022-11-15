@@ -31,7 +31,7 @@ Test Orchestrator will always provide default test-plans with names: default_ios
 
   ```
 
-  ./Sift orchestrator --token 'your token' --endpoint "https://api.orchestrator.engenious.io" --test-plan 'name of testplan'
+  ./Sift orchestrator --token "your token" --endpoint "https://api.orchestrator.engenious.io" --test-plan "name of testplan"
 
   ```
   </TabItem>
@@ -40,7 +40,7 @@ Test Orchestrator will always provide default test-plans with names: default_ios
   Go to the Project folder and run:
 
   ```
-  sift orchestrator run --token 'your token' --test-plan 'name of testplan' --status 'quarantined'
+  sift orchestrator run --token 'your token' --test-plan 'name of testplan' --status 'quarantined' 
   ```
   </TabItem>
 </Tabs>
