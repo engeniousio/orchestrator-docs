@@ -23,7 +23,7 @@ Once you have entered the Gen Key command, you will get a few more questions:
 Enter file in which to save the key (/Users/demouser/.ssh/id_rsa):
 ```
 
-You can press enter here, saving the file to the user home (in this case, my example user is called demouser).
+You can press enter here, saving the file to the user home (in this case, an example user is called demouser).
 
 ```
 Enter passphrase (empty for no passphrase):
@@ -98,4 +98,4 @@ Now you can go ahead and log into your user profile and you will not be prompted
 
 Sift will use nodes to connect to them and send build and results between Main node and execution nodes. So Main node must be able to connect to nodes without password, and every node have to be able to connect to Main node in the same way.
 
-Just repeat steps 1 - 3 for every nodes.
+Just repeat steps 1 - 3 for every node.
